@@ -217,11 +217,13 @@ public class Interfaz extends JFrame  {
     }
     private void claveincorrecta(){
         ci = new JLabel("¡Clave Incorrecta!");
-        ci.setBounds(215,120,72,40);
+        ci.setBounds(280,70,87,30);
         ci.setOpaque(true);
         ci.setForeground(Color.BLUE);
         ci.setFont(new Font ("Times New Roman",Font.PLAIN,12));
         ci.setBackground(Color.BLACK);
+        Panel.add(ci);
+        ci.setVisible(false);
     }
     
     private void  usoMouse(){
@@ -232,8 +234,9 @@ public class Interfaz extends JFrame  {
           if(clave.equals("0245")){
               CajaRetirar.setVisible(true);
               ci.setVisible(false);
-          }else if(!clave.contains("0245")){
+          }else if(!clave.equals("0245")){
               ci.setVisible(true);
+              CajaRetirar.setVisible(false);
           }
            
         }
