@@ -1,1 +1,49 @@
 https://www.bing.com/videos/riverview/relatedvideo?&q=metalsploit+kernel+panic+solucion+&&mid=785EE8413039A314B1A1785EE8413039A314B1A1&&FORM=VRDGAR
+en caso de errores comunes utilizar el link algunas de las soluciones son el problema de sobrecarga de loa BIOS o malos ajustes
+
+Cada herramienta tiene distintos medios de comando estos son algunos en especifico de cada una 
+Dmitry Dominio web (Escaneo directo)
+observa y arroja información por protocolo de registro de dominio llamado Whois
+entre ellos: el IPHOST dirección ip
+datos del servidor y del dominio
+
+git clone https://github.com/santiko/KnockPy.git 
+sirve para clonar información de links, en este caso copia la infromacion del knockpy
+
+cd KnockPy 
+abre la carpeta en la que fue clonado el repositorio 
+
+Python KnockPy Dominio web WordList.txt (Escaneo directo)
+
+busca los subdominios
+sirve para tener vectores de ataque y hacer auditorias de seguridad web	
+
+dnsenum dominio web (Escaneo directo)
+Función instalada por defecto 
+lanza el host del dominio web el registro address
+muestra links server que permite saber cuales son los dns que corresponden a un determinado dominio y  muestra las ip de los mismos
+también muestra el registro mail que especifica el servidor encargado de procesar los correos electrónicos del dominio y la dirección ip asociada al mismo
+
+nmap ip o dirección web 
+
+escanea Y muestra información especifica como los puertos, protocolos y la latencia hacia el host 
+
+nmap --open ip o dirección web 
+Muestra los puertos abiertos o posiblemente abiertos
+
+también puedo hacer un nano y escribir en el direcciones ip o dominios  y luego escanearlos a través del nombre del archivo como nmap -Il Dominio web
+
+las Scan techniqus que aparecen allí sirven en caso de que se vea algún rechazi por parte del firewall
+
+searchsploit vsftpd num_version
+ayuda a buscar sploit dentro de la versión 
+
+para estos casos al explorar las versiones web puedo buscar las mas comunes en cierta cantidad  y después de esto revisar los sploit de estas
+
+en la ruta /usr/share/nmap/scripts 
+se encuentran  los scripts para escaneos estos tienen nombre y su accion al lado o el nombre del agente
+para el escaneo especifico con scripts seria el siguiente comando:
+
+nmap --scripts="nombre_del_script(direccion)" ip o dominio web 
+este devuelve el protocolo completo mas información sobre directorios entre mas funciones
+
