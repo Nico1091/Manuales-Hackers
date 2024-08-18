@@ -1,0 +1,146 @@
+https://www.bing.com/videos/riverview/relatedvideo?&q=metalsploit+kernel+panic+solucion+&&mid=785EE8413039A314B1A1785EE8413039A314B1A1&&FORM=VRDGAR
+en caso de errores comunes utilizar el link algunas de las soluciones son el problema de sobrecarga de loa BIOS o malos ajustes
+
+Cada herramienta tiene distintos medios de comando estos son algunos en especifico de cada una 
+Dmitry Dominio web (Escaneo directo)
+observa y arroja información por protocolo de registro de dominio llamado Whois
+entre ellos: el IPHOST dirección ip
+datos del servidor y del dominio
+
+git clone https://github.com/santiko/KnockPy.git 
+sirve para clonar información de links, en este caso copia la infromacion del knockpy
+
+cd KnockPy 
+abre la carpeta en la que fue clonado el repositorio 
+
+Python KnockPy Dominio web WordList.txt (Escaneo directo)
+
+busca los subdominios
+sirve para tener vectores de ataque y hacer auditorias de seguridad web	
+
+dnsenum dominio web (Escaneo directo)
+Función instalada por defecto 
+lanza el host del dominio web el registro address
+muestra links server que permite saber cuales son los dns que corresponden a un determinado dominio y  muestra las ip de los mismos
+también muestra el registro mail que especifica el servidor encargado de procesar los correos electrónicos del dominio y la dirección ip asociada al mismo
+
+nmap ip o dirección web 
+
+escanea Y muestra información especifica como los puertos, protocolos y la latencia hacia el host 
+
+nmap --open ip o dirección web 
+Muestra los puertos abiertos o posiblemente abiertos
+
+también puedo hacer un nano y escribir en el direcciones ip o dominios  y luego escanearlos a través del nombre del archivo como nmap -Il Dominio web
+
+las Scan techniqus que aparecen allí sirven en caso de que se vea algún rechazi por parte del firewall
+
+searchsploit vsftpd num_version
+ayuda a buscar sploit dentro de la versión 
+
+para estos casos al explorar las versiones web puedo buscar las mas comunes en cierta cantidad  y después de esto revisar los sploit de estas
+
+en la ruta /usr/share/nmap/scripts 
+se encuentran  los scripts para escaneos estos tienen nombre y su accion al lado o el nombre del agente
+para el escaneo especifico con scripts seria el siguiente comando:
+
+nmap --scripts="nombre_del_script(direccion)" ip o dominio web 
+este devuelve el protocolo completo mas información sobre directorios entre mas funciones
+
+OSINT
+existen variedad de formas para hacer OSINT entre ellas están los bots como instabot que esta en repos de GitHub 
+
+solo es cuestión de copiar el siguiente comando en la consola Phyton
+Bot de instagram para hacer osint,y muchas funcionalidades
+
+Instalacion:
+
+Para instalarlos lo puedes hacer creando otra carpeta nueva
+Mkdir Carpetanueva
+abres la carpeta nueva
+cd Carpetanueva
+
+git clone https://github.com/thiagous06/InstaBot.git
+
+git clone https://github.com/thiagous06/InstaBot.git
+
+NO USAR MUY SEGUIDO 
+(también se puede con:
+Link repositorio
+https://github.com/ahmadchen/osi.ig
+Link para copiar la herramienta
+$ git clone https://github.com/ahmadchen/osi.ig.git && cd osi.ig)
+
+Este otro repositorio a copiar para usar herramienra
+https://github.com/th3unkn0n/osi.ig
+
+este es el comando para copiar e instalar en la maquina la herramienta
+git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig
+
+luego entra a este repositorio
+https://github.com/Datalux/Osintgram
+luego escribe en la consola 
+git clone https://github.com/Datalux/Osintgram.git
+
+
+OSINTGRAM
+
+editar la herramienta 
+para eso lo principal es tener un editor de texto
+primero haz un update a los paquetes 
+sudo apt-get update
+luego instala el editor
+sudo apt-get install leafpad
+luego entra a la carpeta abre el Osintgram
+cd Osintgram
+cd config
+luego escriba 
+leafpad settings.json 
+y escriba {}
+y luego escriba 
+leafpad credentials.ini
+allí escriba su nmbre de usuario y contraseña de Linux
+haz un cat settings.json
+y un cat credentials.ini 
+para confirmar que si están escritos
+
+para investigar a un usuario Instagram escribe
+Python main.py Nombre de usuario
+pones list para listar las opciones de la herramienta para usar en el Instagram
+
+Comandos ejemplo
+likes
+para saber cuantos likes tiene
+info 
+para saber información general incluyendo link de foto de perfil
+hashtags para ver los hashtags que uso la cuenta
+tagged o wtagged
+para ver los usuarios etiquetados por el usuario atacado
+stories
+para descargar las historias de este
+generalmente estarán en la carpeta output
+wcommented
+para saber quienes comentaron en el perfil del usuario
+incluyendo id y nombre de usuario y nombre completo registrado
+propic
+para descargar la foto de perfil
+photos 
+para descargar todas las fotos que tenga en su cuenta de Instagram
+followers 
+para ver todos los usuarios que siguen a la cuenta
+comments 
+para ver el total de los comentarios en las  publicaciones 
+addrs
+para saber las ubicaciones de donde el usuario subio las fotos
+photodes
+para ver la descripción de cada foto
+
+Todo esto se puede hacer para realizar un ataque a las cuentas recopila información para hacer ataques
+
+herramienta YPHISH
+Link de repositorio de herramienta
+https://github.com/thiagoaraujosec/YPhish
+Link de descarga 
+https://github.com/thiagoaraujosec/YPhish.git
+El link de descarga se debe copiar en  la consola de Linux
+menú de comandos 
