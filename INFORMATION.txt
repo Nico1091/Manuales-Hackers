@@ -277,26 +277,7 @@ una medida de precaución es usar virustotal en caso de archivos generalmente pa
 
 Herramienta PyPhisher
 Link del repositorio GitHub
-https://github.com/KasRoudra2/PyPhisher
-link de la herramienta (copiar en consola)
-git clone https://github.com/KasRoudra/PyPhisher
-para esto necesito copiar las siguiente dependencia en consola
-sudo apt install git python3 php openssh-client -y
-abrimos el paquete de PyPhisher
-cd PyPhisher
-instalo los requerimientos de la herramienta
-pip3 install -r files/requirements.txt
-ejecuto la herramienta
-python3 pyphisher.py
-esta herramienta da opciones de aplicaciones a las cuales hacerle Phising luego teniendo en cuenta los protocolos de seguridad de las mismas da opciones al usario para evadir dichas opciones o no
-supuestamente el mejor link es el que se arroja del LocalHostRun
-mostrara un espacio de la pagina que escogimos si alguien ingresa datos ahí el servidor nos mostrara los datos generalmente serán usuario y contraseña
-Esta herramienta no funciona ya
-
-Herramienta Zphisher 
-link del repositorio
-https://github.com/Exido-Rio/zphisher-
-link de la herramienta a copiar
+https://github.com/KasRlink de la herramienta a copiar
 git clone https://github.com/Exido-Rio/zphisher-.git
 luego abrimos la herramienta
 y hacemos el comando 
@@ -333,16 +314,67 @@ luego hacemos
 bash saycheese.sh
 escojo  la opción 1
 doy el link a la victimaa
+oudra2/PyPhisher
+link de la herramienta (copiar en consola)
+git clone https://github.com/KasRoudra/PyPhisher
+para esto necesito copiar las siguiente dependencia en consola
+sudo apt install git python3 php openssh-client -y
+abrimos el paquete de PyPhisher
+cd PyPhisher
+instalo los requerimientos de la herramienta
+pip3 install -r files/requirements.txt
+ejecuto la herramienta
+python3 pyphisher.py
+esta herramienta da opciones de aplicaciones a las cuales hacerle Phising luego teniendo en cuenta los protocolos de seguridad de las mismas da opciones al usario para evadir dichas opciones o no
+supuestamente el mejor link es el que se arroja del LocalHostRun
+mostrara un espacio de la pagina que escogimos si alguien ingresa datos ahí el servidor nos mostrara los datos generalmente serán usuario y contraseña
+Esta herramienta no funciona ya
+
+Herramienta Zphisher 
+link del repositorio
+https://github.com/Exido-Rio/zphisher-
 luego el empieza a tomar fotos de la cámara sin que el usuario se entere
 es solo que el usuario debe autorizar la entrada a la cámara
 luego de ello para terminar de ejecutar el script se debe dar click a las teclas
 ctrl c
 Las fotos quedaran registradas en el directorio saycheese
 
-Herramientas lockphish
+Herramientas lockphish /no funciono la herramienta
 link del repositorio
 https://github.com/JasonJerry/lockphish.git
 link de la herramienta
 git clone https://github.com/JasonJerry/lockphish.git
 una vez instalada abrimos la carpeta 
 cd Lockphish 
+luego ejecutamos el comando 
+sudo bash lockpphish.sh 
+genera un link
+con este link si lo mantenemos en ejecución y alguien entra allí
+cuando digite la clave de su teléfono nos mostrara la información en el servidor 
+Ip
+Tipo y versión de dispositivo
+Contraseña
+
+Koroni
+link repositorio GitHub
+https://github.com/DeepSociety/koroni
+link de la herramienta a copiar
+git clone https://github.com/DeepSociety/koroni.git
+ejecutamos
+cd koroni
+ejecutamos el comando 
+chmod +x koroni
+luego ejecutamos la herramienta como administrador
+sudo bash koroni
+podemos modificar de acuerdo a las opciones del menú
+después ejecutamos
+run
+esperamos que cargue 
+escogemos la opción 2
+copiamos el link de enviar a la victima
+y lo pegamos en un acortador como bitly
+con la finalidad de cubrir el link
+luego nos mostrara información del PC como dimensiones de pantalla y maquina donde se esta ejecutando además de link de ubicación en Google maps
+
+TROYANOS
+Programa malicioso que dice ser bueno pero no lo es suele generar acceso remoto
